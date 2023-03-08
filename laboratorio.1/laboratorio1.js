@@ -21,20 +21,59 @@ function calcular(base, altura){ //crea variable
 
 }
 
-//Esta funcion retorna valores
-let resultado=calcular(5, 4);
+//Esta funcion retorna valor
+let resultado= calcular(5, 4);
 
 //imprimir el area
 console.log(resultado[0])
 
 //hipotenusa
 
-function calcular_hipotenusa(){
+//function calcular_hipotenusa(){
 
     //Math.pow(a.2) para exponentes
 
-    const hipotenusa= Math.sqrt(a**2+b**2);
-    return hipotenusa;
+    //const hipotenusa= Math.sqrt(a**2+b**2);
+    //return hipotenusa;
+//}
+
+//let resultado2= calcular_hipotenusa(10, 20);
+//console.log(resultado2)
+
+//suma, resta, multiplicación y división
+
+function calculadora(a,b){
+   document.writeln(a+b);
+   document.writeln(a-b);
+   document.write(a*b);
+   document.write(a/b);
+
+   console.log(a+b);
+   //console.warn(a-b);
+   //console.error(a*b);
+   console.info(a/b);
 }
 
-let resultado= calcular_hipotenusa(10, 20);
+calculadora(5,4);    //escribe en la página
+
+//Media de 3 números
+
+function media(){
+   
+    let campo_x = document.getElementById('x');
+    let campo_y = document.getElementById('y');
+    let campo_z = document.getElementById('z');
+    console.log(campo_x.value + campo_y.value + campo_z.value)
+
+    //casting cambia de manera explicita el tipo de dato de una variable
+    let x=parseInt(campo_x.value);
+    let y=parseInt(campo_y.value);
+    let z=parseInt(campo_z.value);
+
+    //let promedio= (campo_x+campo_y+campo_z)/3
+    let promedio= (x+y+z)/3;
+
+    console.log(promedio);
+
+    return promedio;
+}
